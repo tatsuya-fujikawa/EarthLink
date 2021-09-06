@@ -1,1 +1,76 @@
-@import "color";
+@import "normalize.scss";
+@import "color.scss";
+
+/* base default*/
+$basefontsize: 16;
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  line-height: 1.6;
+  font-size: $basefontsize + px;
+  font-family: 'Poppins', sans-serif, 'Noto Sans JP', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+
+}
+
+@function rem($pixels, $context: $basefontsize) {
+  @return $pixels / $context * 1rem;
+}
+
+body {
+  color: #1c1c1c;
+  background-color: var(--main-bg-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  letter-spacing: .05em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+:root {
+  --en-font: 'Poppins', sans-serif;
+}
+
+// @media screen and (max-width: 1280px) {
+
+// }
+
+// @media screen and (max-width: 1024px) {
+
+//  }
+
+//  @media screen and (max-width: 900px) {
+
+//  }
+
+//  @media screen and (max-width: 768px) {
+
+//  }
+
+//  @media screen and (max-width: 425px) {
+
+//  }
