@@ -449,6 +449,41 @@ a:hover {
   justify-content: space-between;
 }
 
+.c-heading {
+  display: inline-block;
+  position: relative;
+}
+.c-heading:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 55%;
+  height: 1px;
+  background-color: var(--color-main);
+  top: 52%;
+  right: 33%;
+  transform: rotate(123deg);
+}
+.c-heading__en {
+  color: var(--color-main);
+  font-size: 6.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.c-heading__title {
+  font-size: 1.25rem;
+  color: var(--color-main);
+  padding-top: 1em;
+  text-align: center;
+}
+.c-heading.-center {
+  margin: 0 auto;
+}
+
+.c-centerposition {
+  text-align: center;
+}
+
 .p-footer {
   color: var(--color-white);
 }
