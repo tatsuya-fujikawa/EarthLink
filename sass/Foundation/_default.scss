@@ -19,17 +19,16 @@ html, body {
 html {
   line-height: 1.6;
   font-size: $basefontsize + px;
-  font-family: 'Poppins', sans-serif, 'Noto Sans JP', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-family: 'Noto Sans JP', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
 
 }
 
-@function rem($pixels, $context: $basefontsize) {
+@function rem($pixels, $context: $basefontsize) { 
   @return $pixels / $context * 1rem;
 }
 
 body {
   color: #1c1c1c;
-  background-color: var(--main-bg-color);
 }
 
 ul {
