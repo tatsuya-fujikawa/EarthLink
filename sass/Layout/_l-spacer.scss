@@ -1,0 +1,44 @@
+.l-spacer {
+  padding: 4rem 0;
+
+  @include mq('sp') {
+      padding: 2rem 0;
+  }
+
+  &.-title {
+      padding: 10rem 0 3rem;
+
+      @include mq('sp') {
+          padding: 3rem 0 3rem;
+      }
+  }
+
+  &.-section {
+   padding: 6.8rem 0;
+
+   @include mq('sp') {
+       padding: 3rem 0;
+   }
+  }
+ 
+  &.-maximum {
+   padding: 5rem 0;
+  }
+ 
+  &.-minimum {
+   padding: .5rem 0;
+  }
+ 
+  &.-medium {
+   padding: 2rem 0;
+  }
+ 
+  &.-nobottom {
+   padding-bottom: 0;
+  }
+ 
+  &.-notop {
+   padding-top: 0;
+  }
+
+ }

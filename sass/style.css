@@ -321,8 +321,9 @@ svg:not([fill]) {
 :root {
   --color-main: #004EB4;
   --color-orange: #FFB729;
-  --color-white: #FFFFFF;
+  --color-white: #fcfcfc;
   --color-bg-gray: #F5F5F5;
+  --color-footer-line: #5298C5;
   --color-text: #232323;
   --color-alert: #d00000;
 }
@@ -342,6 +343,7 @@ html, body {
 
 html {
   line-height: 1.6;
+  letter-spacing: 0.1em;
   font-size: 16px;
   font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", sans-serif;
 }
@@ -370,7 +372,7 @@ a:hover {
 }
 
 :root {
-  --en-font: "Poppins", sans-serif;
+  --en-font: "roboto", sans-serif;
 }
 
 .l-container {
@@ -378,6 +380,16 @@ a:hover {
   max-width: 1000px;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .l-container {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-container {
+    width: 95%;
+  }
 }
 
 .l-container--narrow {
@@ -387,15 +399,146 @@ a:hover {
   height: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-  .l-container {
-    width: 95%;
+.l-spacer {
+  padding: 4rem 0;
+}
+@media screen and (max-width: 767px) {
+  .l-spacer {
+    padding: 2rem 0;
   }
 }
+.l-spacer.-title {
+  padding: 10rem 0 3rem;
+}
+@media screen and (max-width: 767px) {
+  .l-spacer.-title {
+    padding: 3rem 0 3rem;
+  }
+}
+.l-spacer.-section {
+  padding: 6.8rem 0;
+}
+@media screen and (max-width: 767px) {
+  .l-spacer.-section {
+    padding: 3rem 0;
+  }
+}
+.l-spacer.-maximum {
+  padding: 5rem 0;
+}
+.l-spacer.-minimum {
+  padding: 0.5rem 0;
+}
+.l-spacer.-medium {
+  padding: 2rem 0;
+}
+.l-spacer.-nobottom {
+  padding-bottom: 0;
+}
+.l-spacer.-notop {
+  padding-top: 0;
+}
+
 .l-footer {
-  background-color: var(--color-main);
+  background: linear-gradient(0deg, #004eb4 0%, #074db7 0%, #0069cb 100%);
+}
+.l-footer__inner {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-footer {
+  color: var(--color-white);
+}
+.p-footer a {
+  display: inline-block;
+  transition: 0.3s;
+}
+.p-footer a:hover {
+  opacity: 0.9;
+  color: #bdbdbd;
+  transition: 0.3s;
+}
+.p-footer__nav {
+  width: 25%;
+}
+.p-footer__nav-title {
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding-bottom: 1.25em;
+}
+.p-footer__nav-title + .p-footer__nav-title {
+  padding-top: 1em;
+}
+.p-footer__nav-title a {
+  display: block;
+}
+.p-footer__nav-title:after {
+  position: absolute;
+  content: "";
+  background-color: var(--color-footer-line);
+  height: 1px;
+  width: 75%;
+  bottom: 0;
+  left: 0;
+}
+.p-footer__nav-list {
+  font-size: 0.8125rem;
+  padding-top: 0.25em;
+}
+.p-footer__nav-list li {
+  position: relative;
+  padding-top: 1em;
+  padding-left: 2em;
+}
+.p-footer__nav-list li:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  background-color: var(--color-white);
+  top: 69%;
+  left: 0%;
+}
+.p-footer__bottom {
+  text-align: right;
+}
+.p-footer__text {
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding-bottom: 1.75em;
+}
+.p-footer__text-en {
+  font-size: 0.75rem;
 }
 
 .u-gothic {
   font-family: "游ゴシック体", YuGothic, "游ゴシック" sans-serif;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+}
+
+.u-centerposition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
