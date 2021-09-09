@@ -1,5 +1,6 @@
 .l-footer {
-    background: linear-gradient(0deg, rgba(0,78,180,1) 0%, rgba(7,77,183,1) 0%, rgba(0,105,203,1) 100%);
+    // background: linear-gradient(0deg, rgba(0,78,180,1) 0%, rgba(7,77,183,1) 0%, rgba(0,105,203,1) 100%);
+    background: var(--color-main);
 
     &__inner {
         width: 95%;

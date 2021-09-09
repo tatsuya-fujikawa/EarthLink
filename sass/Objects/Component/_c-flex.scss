@@ -2,5 +2,9 @@
 
   &__half {
     display: flex;
+
+    &-item {
+      width: 50%;
+    }
   }
 }
