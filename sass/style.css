@@ -482,6 +482,10 @@ a:hover {
   margin: 0 auto;
 }
 
+.c-flex__half {
+  display: flex;
+}
+
 .c-btn {
   position: relative;
   font-size: 1rem;
