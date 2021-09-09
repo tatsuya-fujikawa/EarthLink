@@ -320,6 +320,7 @@ svg:not([fill]) {
 
 :root {
   --color-main: #004EB4;
+  --color-sub: #4587df;
   --color-orange: #FFB729;
   --color-white: #fcfcfc;
   --color-gray: #eeeeee;
@@ -410,7 +411,7 @@ a:hover {
   }
 }
 .l-spacer.-title {
-  padding: 10rem 0 3rem;
+  padding: 8rem 0 3rem;
 }
 @media screen and (max-width: 767px) {
   .l-spacer.-title {
@@ -441,8 +442,57 @@ a:hover {
   padding-top: 0;
 }
 
+.l-interview {
+  position: relative;
+}
+.l-interview:after {
+  position: absolute;
+  z-index: -4;
+  content: "";
+  background: var(--color-bg-gray);
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.l-movie {
+  position: relative;
+  z-index: 10;
+}
+.l-movie:after {
+  position: absolute;
+  z-index: -5;
+  content: "";
+  background: var(--color-btn-white);
+  width: 90%;
+  height: 100%;
+  border-radius: 0 12px 0 0;
+  top: 0;
+  left: 0;
+}
+
+.l-slide {
+  position: relative;
+  z-index: 13;
+}
+.l-slide:after {
+  position: absolute;
+  z-index: -5;
+  content: "";
+  background: var(--color-btn-white);
+  width: 90%;
+  height: 100%;
+  border-radius: 0 0 12px 0;
+  top: 0;
+  left: 0;
+}
+.l-slide__inner {
+  width: 90%;
+}
+
 .l-footer {
-  background: linear-gradient(0deg, #004eb4 0%, #074db7 0%, #0069cb 100%);
+  background: var(--color-main);
 }
 .l-footer__inner {
   width: 95%;
@@ -485,11 +535,13 @@ a:hover {
 .c-flex__half {
   display: flex;
 }
+.c-flex__half-item {
+  width: 50%;
+}
 
 .c-btn {
   position: relative;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 0.875rem;
   display: inline-block;
   cursor: pointer;
   background-color: var(--color-btn-white);
@@ -513,11 +565,14 @@ a:hover {
   border: solid 2px var(--color-main);
   transition: 0.2s;
 }
+.c-btn:hover {
+  opacity: 0.8;
+}
 .c-btn:hover:after {
   width: 15px;
   height: 15px;
   right: 7.7%;
-  border: solid 10px var(--color-main);
+  border: solid 10px var(--color-sub);
 }
 .c-btn span {
   height: 100%;
@@ -555,6 +610,11 @@ a:hover {
 }
 .c-btn span:hover:before, .c-btn span:hover:after {
   transform: scale(1);
+}
+
+.c-text {
+  font-size: 0.875rem;
+  line-height: 2em;
 }
 
 .c-centerposition {
@@ -627,12 +687,23 @@ a:hover {
   font-size: 0.75rem;
 }
 
+.p-interview__lead {
+  width: 80%;
+  margin: 8em auto 0;
+}
+
 .u-gothic {
   font-family: "游ゴシック体", YuGothic, "游ゴシック" sans-serif;
 }
 
 .u-uppercase {
   text-transform: uppercase;
+}
+
+.u-bgblue {
+  background-color: var(--color-main);
+  position: relative;
+  z-index: -10;
 }
 
 .u-visually-hidden {
@@ -653,4 +724,12 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.u-spacer__m {
+  height: 40px;
+}
+
+.u-spacer__l {
+  height: 100px;
 }

@@ -1,7 +1,7 @@
 .c-btn {
   position: relative;
-  font-size: rem(16);
-  font-weight: bold;
+  font-size: rem(14);
+  // font-weight: bold;
   display: inline-block;
   cursor: pointer;
   background-color: var(--color-btn-white);
@@ -28,11 +28,12 @@
   }
 
   &:hover {
+    opacity: 0.8;
     &:after {
       width: 15px;
       height: 15px;
       right: 7.7%;
-      border: solid 10px var(--color-main);
+      border: solid 10px var(--color-sub);
     }
   }
 

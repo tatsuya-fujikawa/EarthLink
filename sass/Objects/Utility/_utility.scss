@@ -6,6 +6,12 @@
   text-transform: uppercase;
  }
 
+.u-bgblue {
+  background-color: var(--color-main);
+  position: relative;
+  z-index: -10;
+}
+
 .u-visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -23,4 +29,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.u-spacer__m  {
+  height: 40px;
+}
+.u-spacer__l {
+  height: 100px;
 }
