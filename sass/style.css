@@ -443,8 +443,18 @@ a:hover {
 }
 
 .l-interview {
-  background-color: var(--color-bg-gray);
   position: relative;
+}
+.l-interview:after {
+  position: absolute;
+  z-index: -4;
+  content: "";
+  background: var(--color-bg-gray);
+  width: 80%;
+  height: 100%;
+  border-radius: 0 0 12px 0;
+  top: 0;
+  left: 0;
 }
 
 .l-movie {
@@ -458,7 +468,7 @@ a:hover {
   background: var(--color-btn-white);
   width: 80%;
   height: 100%;
-  border-radius: 0 4px 0 0;
+  border-radius: 0 12px 0 0;
   top: 0;
   left: 0;
 }
@@ -555,6 +565,27 @@ a:hover {
   padding-bottom: 1em;
   padding-left: 1.75em;
   border-radius: 4px;
+}
+.c-btn span:before, .c-btn span:after {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: 2;
+  content: "";
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+.c-btn span:before {
+  border-top: 2px solid var(--color-main);
+  border-bottom: 2px solid var(--color-main);
+  transform: scale(0, 1);
+}
+.c-btn span:after {
+  border-right: 2px solid var(--color-main);
+  border-left: 2px solid var(--color-main);
+  transform: scale(1, 0);
 }
 .c-btn span:hover {
   color: var(color-main);

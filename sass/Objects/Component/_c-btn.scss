@@ -47,29 +47,29 @@
     padding-left: 1.75em;
     border-radius: 4px;
 
-    // &:before,&:after {
-    //   position: absolute;
-    //   top: -2px;
-    //   right: -2px;
-    //   bottom: -2px;
-    //   left: -2px;
-    //   z-index: 2;
-    //   content: '';
-    //   transition: all .3s;
-    //   border-radius: 4px;
-    // }
+    &:before,&:after {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      left: -2px;
+      z-index: 2;
+      content: '';
+      transition: all .3s;
+      border-radius: 4px;
+    }
 
-    // &:before {
-    //   border-top: 2px solid var(--color-main);
-    //   border-bottom: 2px solid var(--color-main);
-    //   transform: scale(0,1);
-    // }
-    // &:after {
-    //   border-right: 2px solid var(--color-main);
-    //   border-left: 2px solid var(--color-main);
-    //   transform: scale(1,0);
+    &:before {
+      border-top: 2px solid var(--color-main);
+      border-bottom: 2px solid var(--color-main);
+      transform: scale(0,1);
+    }
+    &:after {
+      border-right: 2px solid var(--color-main);
+      border-left: 2px solid var(--color-main);
+      transform: scale(1,0);
 
-    // }
+    }
 
     &:hover {
       color: var(color-main);
