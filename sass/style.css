@@ -480,6 +480,10 @@ a:hover {
   margin: 0 auto;
 }
 
+.c-flex__half {
+  display: flex;
+}
+
 .c-centerposition {
   text-align: center;
 }
