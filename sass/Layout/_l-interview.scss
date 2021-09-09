@@ -1,0 +1,15 @@
+.l-interview {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    z-index: -4;
+    content: "";
+    background: var(--color-bg-gray);
+    width: 90%;
+    height: 100%;
+    // border-radius: 0 0 12px 0;
+    top: 0;
+    left: 0;
+  }
+}
