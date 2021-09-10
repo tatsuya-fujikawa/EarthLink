@@ -1,0 +1,30 @@
+.swiper-container{
+  width: 100%;
+  // height: 400px;
+  overflow: visible;
+}
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-wrapper {
+  transition-timing-function: ease-in-out;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  z-index: 10;
+  transform: translate(0%, -50%);
+  margin-top: 0;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.swiper-button-prev {
+  left: 0;
+}

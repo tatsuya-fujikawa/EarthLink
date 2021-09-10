@@ -1,5 +1,6 @@
 .l-interview {
   position: relative;
+  z-index: 10;
 
   &:after {
     position: absolute;
