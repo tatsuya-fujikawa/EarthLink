@@ -444,6 +444,7 @@ a:hover {
 
 .l-interview {
   position: relative;
+  z-index: 10;
 }
 .l-interview:after {
   position: absolute;
@@ -474,7 +475,7 @@ a:hover {
 
 .l-slide {
   position: relative;
-  z-index: 13;
+  z-index: 200;
 }
 .l-slide:after {
   position: absolute;
@@ -617,8 +618,48 @@ a:hover {
   line-height: 2em;
 }
 
+.c-card {
+  position: relative;
+  z-index: 10;
+  border: 1px solid var(--color-gray);
+  display: inline-block;
+  border-radius: 12px;
+  background-color: var(--color-gray);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 4em;
+}
+.c-card:last-of-type {
+  margin-right: 0;
+}
+.c-card__top img {
+  border-radius: 12px;
+}
+.c-card__bottom {
+  padding: 0.5em 0 1em 1em;
+}
+.c-card__text {
+  font-size: 0.6875rem;
+  padding-top: 0.25em;
+}
+.c-card:hover {
+  background-color: var(--color-white);
+}
+
 .c-centerposition {
   text-align: center;
+}
+
+.p-slide__wrap {
+  position: relative;
+  top: -3em;
+  display: flex;
+  justify-content: center;
+}
+
+.p-interview__lead {
+  width: 80%;
+  margin: 8em auto 0;
 }
 
 .p-footer {
@@ -687,11 +728,6 @@ a:hover {
   font-size: 0.75rem;
 }
 
-.p-interview__lead {
-  width: 80%;
-  margin: 8em auto 0;
-}
-
 .u-gothic {
   font-family: "游ゴシック体", YuGothic, "游ゴシック" sans-serif;
 }
@@ -703,7 +739,6 @@ a:hover {
 .u-bgblue {
   background-color: var(--color-main);
   position: relative;
-  z-index: -10;
 }
 
 .u-visually-hidden {
