@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <script src="./js/swiper.min.js" defer></script>
+    <script src="./js/swiper.js" defer></script>
     <title>株式会社EarthLink</title>
 </head>
 <body>
@@ -18,9 +22,8 @@
         <div class="l-container l-spacer">
             <a class="c-btn -gray" href="#"><span>詳しく見る</span></a>
 
-            
         </div>
-    </main>
+    
     <div class="u-bgblue">
     
     <div class="u-spacer__l"></div><!-- /.u-spacer--l -->
@@ -63,40 +66,71 @@
     </div><!-- /.l-spacer -->
     </section>
     <section class="l-slide p-slide">
-        <div class="l-spacer -section">
+        <div class="l-spacer -section -notop">
             <div class="l-slide__inner">
-                <div class="p-slide__wrap">
-                    <a class="c-card">
-                        <div class="c-card__top">
-                            <img src="https://placehold.jp/265x286.png" alt="">
-                        </div><!-- /c-card__top -->
-                        <div class="c-card__bottom">
-                            <p class="c-card__text">2017年　新卒入社</p><!-- /c-card__text -->
-                            <p class="c-card__text">システムエンジニア</p><!-- /c-card__text -->
-                            <p class="c-card__text">M.I</p><!-- /c-card__text -->
-                        </div><!-- /c-card__bottom -->
-                    </a><!-- /c-card -->
-                    <a class="c-card">
-                        <div class="c-card__top">
-                            <img src="https://placehold.jp/265x286.png" alt="">
-                        </div><!-- /c-card__top -->
-                        <div class="c-card__bottom">
-                            <p class="c-card__text">2017年　新卒入社</p><!-- /c-card__text -->
-                            <p class="c-card__text">システムエンジニア</p><!-- /c-card__text -->
-                            <p class="c-card__text">M.I</p><!-- /c-card__text -->
-                        </div><!-- /c-card__bottom -->
-                    </a><!-- /c-card -->
-                    <a class="c-card">
-                        <div class="c-card__top">
-                            <img src="https://placehold.jp/265x286.png" alt="">
-                        </div><!-- /c-card__top -->
-                        <div class="c-card__bottom">
-                            <p class="c-card__text">2017年　新卒入社</p><!-- /c-card__text -->
-                            <p class="c-card__text">システムエンジニア</p><!-- /c-card__text -->
-                            <p class="c-card__text">M.I</p><!-- /c-card__text -->
-                        </div><!-- /c-card__bottom -->
-                    </a><!-- /c-card -->
-                </div><!-- /p-slide__wrap -->
+                <div class="swiper-container">
+                    <div class="p-slide__wrap swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <a class="c-card" href="#">
+                                <div class="c-card__top">
+                                    <img src="https://placehold.jp/286x265.png" alt="">
+                                </div><!-- /c-card__top -->
+                                <div class="c-card__bottom">
+                                    <p class="c-card__text">2017年　新卒入社</p><!-- /c-card__text -->
+                                    <p class="c-card__text">システムエンジニア</p><!-- /c-card__text -->
+                                    <p class="c-card__text">M.I</p><!-- /c-card__text -->
+                                    <span class="c-card__next"></span><!-- /.c-card__next -->
+                                </div><!-- /c-card__bottom -->
+                            </a><!-- /c-card -->
+                        </div><!-- /.swiper-slide -->
+                        
+                        <div class="swiper-slide">
+                            <a class="c-card" href="#">
+                                <div class="c-card__top">
+                                    <img src="https://placehold.jp/286x265.png" alt="">
+                                </div><!-- /c-card__top -->
+                                <div class="c-card__bottom">
+                                    <p class="c-card__text">2018年　新卒入社</p><!-- /c-card__text -->
+                                    <p class="c-card__text">システムエンジニア</p><!-- /c-card__text -->
+                                    <p class="c-card__text">M.I</p><!-- /c-card__text -->
+                                    <span class="c-card__next"></span><!-- /.c-card__next -->
+                                </div><!-- /c-card__bottom -->
+                            </a><!-- /c-card -->
+                        </div><!-- /.swiper-slide -->
+                        
+                        <div class="swiper-slide">
+                            <a class="c-card" href="#">
+                                <div class="c-card__top">
+                                    <img src="https://placehold.jp/286x265.png" alt="">
+                                </div><!-- /c-card__top -->
+                                <div class="c-card__bottom">
+                                    <p class="c-card__text">2019年　新卒入社</p><!-- /c-card__text -->
+                                    <p class="c-card__text">システムエンジニア</p><!-- /c-card__text -->
+                                    <p class="c-card__text">M.I</p><!-- /c-card__text -->
+                                    <span class="c-card__next"></span><!-- /.c-card__next -->
+                                </div><!-- /c-card__bottom -->
+                            </a><!-- /c-card -->
+                        </div><!-- /.swiper-slide -->
+                        
+                        <div class="swiper-slide">
+                            <a class="c-card" href="#">
+                                <div class="c-card__top">
+                                    <img src="https://placehold.jp/286x265.png" alt="">
+                                </div><!-- /c-card__top -->
+                                <div class="c-card__bottom">
+                                    <p class="c-card__text">2020年　新卒入社</p><!-- /c-card__text -->
+                                    <p class="c-card__text">システムエンジニア</p><!-- /c-card__text -->
+                                    <p class="c-card__text">M.I</p><!-- /c-card__text -->
+                                    <span class="c-card__next"></span><!-- /.c-card__next -->
+                                </div><!-- /c-card__bottom -->
+                            </a><!-- /c-card -->
+                        </div><!-- /.swiper-slide -->
+                        
+                    </div><!-- /p-slide__wrap -->
+                    <div class="swiper-button-prev"></div><!-- /.swiper-button-prev -->
+                    <div class="swiper-button-next"></div><!-- /.swiper-button-next -->
+                </div><!-- /.spiper-container -->
             </div><!-- /l-slide__inner -->
         </div><!-- /l-spacer -->
     </section><!-- /l-slide -->
@@ -139,6 +173,7 @@
                 </div><!-- /p-footer__bottom -->
             </div><!-- /.l-spacer -->
         </div><!-- /l-container -->
+        </main>
     </footer>
 
 </body>
