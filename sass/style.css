@@ -323,6 +323,7 @@ svg:not([fill]) {
   --color-sub: #4587df;
   --color-orange: #FFB729;
   --color-white: #fcfcfc;
+  --color-skyblue: #3DA4F1;
   --color-gray: #eeeeee;
   --color-btn-white: #ffffff;
   --color-bg-gray: #F5F5F5;
@@ -489,7 +490,10 @@ a:hover {
   left: 0;
 }
 .l-slide__inner {
-  width: 90%;
+  width: 70vw;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
 }
 
 .l-footer {
@@ -627,12 +631,11 @@ a:hover {
   background-color: var(--color-gray);
   cursor: pointer;
   transition: 0.3s;
-  margin-right: 4em;
-}
-.c-card:last-of-type {
-  margin-right: 0;
+  margin-right: 1em;
+  transition: 0.3s;
 }
 .c-card__top img {
+  transition: 0.3s;
   border-radius: 12px;
 }
 .c-card__bottom {
@@ -641,9 +644,56 @@ a:hover {
 .c-card__text {
   font-size: 0.6875rem;
   padding-top: 0.25em;
+  text-align: left;
+}
+.c-card__next {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid var(--color-main);
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  bottom: 4%;
+  right: 10%;
+  transition: 0.3s;
+}
+.c-card__next:after {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 6px;
+  right: -7px;
+  top: 2px;
+  border-bottom: 1px solid var(--color-main);
+  border-right: 1px solid var(--color-main);
+  transform: skew(45deg);
+  transition: 0.3s;
 }
 .c-card:hover {
   background-color: var(--color-white);
+  transition: 0.3s;
+}
+.c-card:hover .c-card__next {
+  width: 23px;
+  height: 23px;
+  transition: 0.3s;
+  border: 2px solid var(--color-skyblue);
+  right: 8%;
+  bottom: 3%;
+  opacity: 1;
+}
+.c-card:hover .c-card__next:after {
+  transition: 0.3s;
+  width: 22px;
+  height: 8px;
+  right: -11px;
+  border-bottom: 1px solid var(--color-skyblue);
+  border-right: 1px solid var(--color-skyblue);
+  top: 3px;
+}
+.c-card:hover .c-card__top img {
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
 .c-centerposition {
@@ -652,9 +702,7 @@ a:hover {
 
 .p-slide__wrap {
   position: relative;
-  top: -3em;
   display: flex;
-  justify-content: center;
 }
 
 .p-interview__lead {
@@ -767,4 +815,35 @@ a:hover {
 
 .u-spacer__l {
   height: 100px;
+}
+
+.swiper-container {
+  width: 100%;
+  overflow: visible;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-wrapper {
+  transition-timing-function: ease-in-out;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  z-index: 10;
+  transform: translate(0%, -50%);
+  margin-top: 0;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.swiper-button-prev {
+  left: 0;
 }
