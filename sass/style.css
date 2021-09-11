@@ -321,6 +321,7 @@ svg:not([fill]) {
 :root {
   --color-main: #004EB4;
   --color-sub: #4587df;
+  --color-bgtext: #0084FF;
   --color-orange: #FFB729;
   --color-white: #fcfcfc;
   --color-skyblue: #3DA4F1;
@@ -456,6 +457,14 @@ a:hover {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.l-leadsection {
+  overflow: hidden;
+}
+.l-leadsection__inner {
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .l-movie {
@@ -694,6 +703,35 @@ a:hover {
 .p-slide__wrap {
   position: relative;
   display: flex;
+}
+
+.p-leadsection {
+  position: relative;
+}
+.p-leadsection:before {
+  position: absolute;
+  content: "earth link";
+  color: var(--color-bgtext);
+  opacity: 0.08;
+  font-family: "Roboto", sans-serif;
+  top: 33%;
+  left: -2%;
+  font-size: 12.5rem;
+  font-weight: bold;
+}
+.p-leadsection__left {
+  width: 60%;
+}
+.p-leadsection__title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.p-leadsection__right {
+  padding-left: 4em;
+}
+.p-leadsection__right p {
+  padding-top: 2em;
 }
 
 .p-culture__img {
