@@ -1,0 +1,29 @@
+.p-about {
+    &__left {
+        color: var(--color-white);
+        width: 40%;
+        &-top {
+            margin-top: 1em;
+            margin-left: 1em;
+        }
+        &-lead {
+            padding-top: 3em;
+        }
+    }
+    &__right {
+        width: 60%;
+        margin-left: 9em;
+    }
+    &__btnWrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 1em;
+
+        & li {
+            margin-bottom: 1.5em;
+            &:nth-child(odd) {
+                margin-right: 1.5em;
+            }
+        }
+    }
+}

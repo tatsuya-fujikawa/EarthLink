@@ -32,3 +32,21 @@
         margin: 0 auto;
     }
 }
+
+.c-headingLv2 {
+    position: relative;
+    font-size: rem(20);
+    line-height: 29px;
+    font-weight: 400;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 85px;
+        background-color: var(--color-sub);
+        top: -30%;
+        left: -13%;
+        transform: rotate(-54deg);
+    }
+}

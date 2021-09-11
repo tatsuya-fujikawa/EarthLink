@@ -1,0 +1,31 @@
+.p-leadsection {
+    position: relative;
+    &:before {
+        position: absolute;
+        content: 'earth link';
+        color: var(--color-bgtext);
+        opacity: 0.08;
+        font-family: "Roboto", sans-serif;
+        top: 33%;
+        left: -2%;
+        font-size: rem(200);
+        font-weight: bold;
+    }
+    &__left {
+        width: 60%;
+    }
+    
+    &__title {
+        font-size: rem(48);
+        font-weight: bold;
+        letter-spacing: 0.1em;
+    }
+
+    &__right {
+        padding-left: 4em;
+
+        & p  {
+            padding-top: 2em;
+        }
+    }
+}
