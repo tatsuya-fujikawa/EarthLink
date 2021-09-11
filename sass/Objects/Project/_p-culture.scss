@@ -5,11 +5,9 @@
         position: relative;
         z-index: 10;
         // overflow: hidden;
-
         & img {
             border-radius: 12px;
         }
-
         &:after {
             position: absolute;
             content: "";

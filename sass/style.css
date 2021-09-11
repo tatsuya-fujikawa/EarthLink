@@ -478,6 +478,10 @@ a:hover {
   overflow: hidden;
 }
 
+.l-benefits {
+  overflow: hidden;
+}
+
 .l-slide {
   position: relative;
   z-index: 200;
@@ -723,6 +727,38 @@ a:hover {
 .p-interview__lead {
   width: 80%;
   margin: 8em auto 0;
+}
+
+.p-benefits__lead {
+  text-align: left;
+  padding-top: 6em;
+  width: 90%;
+  margin: 0 auto;
+}
+.p-benefits__imgWrap {
+  margin-top: 5em;
+  margin-left: 1em;
+  position: relative;
+}
+.p-benefits__imgWrap:after {
+  position: absolute;
+  content: "";
+  z-index: -10;
+  width: 110%;
+  height: 600px;
+  top: -25%;
+  left: -40%;
+  border-radius: 12px;
+  background: linear-gradient(0deg, #004eb4 0%, #074db7 0%, #0069cb 100%);
+}
+.p-benefits__img img {
+  border-radius: 12px;
+}
+.p-benefits__img + .p-benefits__img {
+  padding-top: 1em;
+}
+.p-benefits__button {
+  padding-top: 5em;
 }
 
 .p-footer {
