@@ -28,3 +28,9 @@
 .swiper-button-prev {
   left: 0;
 }
+
+.l-header.-open {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .35s, visibility .35s, height .35s;
+}
