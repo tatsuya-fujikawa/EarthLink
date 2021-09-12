@@ -14,10 +14,41 @@
     <link rel="stylesheet" href="swiper.min.css">
     <script src="./js/swiper.min.js" defer></script>
     <script src="./js/swiper.js" defer></script>
+    <script src="./js/humberger.js" defer></script>
     <title>株式会社EarthLink</title>
 </head>
 <body>
-    <header>
+    <header id="js-header" class="l-header p-header">
+        <div class="l-container">
+            <div class="l-header__container">
+                <div class="l-header__inner">
+                    <nav class="p-header__nav">
+                        <h3 class="p-header__nav-title">アースリンクについて</h3>
+                        <ul class="p-header__nav-list">
+                            <li><a href="#">経営理念</a></li>
+                            <li><a href="#">会社データ</a></li> 
+                            <li><a href="#">社長メッセージ</a></li>
+                            <li><a href="#">事業内容</a></li>
+                            <li><a href="#">会社概要</a></li>
+                            <li><a href="#">求める人物像</a></li>
+                            <li><a href="#">コアバリュー</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="p-header__nav">
+                        <h3 class="p-header__nav-title">社風について</h3>
+                        <ul class="p-header__nav-list">
+                            <li><a href="#">オフィス風景</a></li>
+                            <li><a href="#">チームワーク</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="p-header__nav">
+                        <h3 class="p-header__nav-title"><a href="#">採用情報</a></h3>
+                        <h3 class="p-header__nav-title"><a href="#">キャリアパスと先輩社員</a></h3>
+                        <h3 class="p-header__nav-title"><a href="#">制度・研修</a></h3>
+                    </nav>
+                </div><!-- /l-header__inner -->
+            </div><!-- /.l-spacer -->
+        </div><!-- /l-container -->
 
     </header>
     <main>
@@ -25,7 +56,7 @@
         <div class="p-navigation__circle">
             <img src="./img/sidebnr.png" alt="">
         </div><!-- /p-navigation__circle -->
-        <button class="p-navigation__humberger">
+        <button id="js-btn" class="p-navigation__humberger">
             <span></span>
             <span></span>
             <span></span>
