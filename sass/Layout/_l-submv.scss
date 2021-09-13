@@ -1,0 +1,35 @@
+.l-submv {
+  min-height: 540px;
+  position: relative;
+  // background: linear-gradient(0deg, rgba(0,78,180,1) 0%, rgba(7,77,183,1) 0%, rgba(0,105,203,1) 100%);
+
+  &:after {
+    position: absolute;
+    content: '';
+    border-radius: 12px 12px 12px 0;
+    background: var(--color-subBG-white);
+    bottom: 0;
+    right: 0;
+    width: 55%;
+    height: 95%;
+    // z-index: 20;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    border-radius: 0 0 12px 0; 
+    width: 45%;
+    height: 100%;
+    // background: linear-gradient(0deg, rgba(0,78,180,1) 0%, rgba(7,77,183,1) 0%, rgba(0,105,203,1) 100%);
+    background-color: var(--color-main);
+  }
+
+  &__mask {
+    width: 100%;
+    background-color: var(--color-main);
+    position: relative;
+  }
+
+
+}
