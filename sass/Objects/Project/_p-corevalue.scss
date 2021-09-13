@@ -1,0 +1,32 @@
+.p-corevalue {
+    overflow: hidden;
+    &__lead {
+        padding-top: 5em;
+        margin: 0 auto;
+        width: 80%;
+    }
+    &__list {
+        padding-top: 5em;
+        margin: 0 auto;
+        width: 80%;
+
+        &-item {
+            font-size: rem(24);
+            font-weight: bold;
+            padding-top: 1.25rem;
+            color: var(--color-text);
+        }
+
+        &:after {
+            position: absolute;
+            content: "earth link";
+            color: var(--color-bgtext);
+            opacity: 0.08;
+            font-family: "Roboto", sans-serif;
+            top: 27%;
+            right: 0;
+            font-size: 12.5rem;
+            font-weight: bold;
+        }
+    }
+}
