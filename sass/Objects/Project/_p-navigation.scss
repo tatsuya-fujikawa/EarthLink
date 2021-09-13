@@ -51,8 +51,10 @@
         }
     }
     &__bottom {
-        position: relative;
-        padding-top: 3em;
+        position: fixed;
+        bottom: 30px;
+        right: 0;
+        // padding-top: 3em;
 
         a {
             display: block;
@@ -62,11 +64,11 @@
         background-color: var(--color-orange);
         border-radius: 4px;
         display: block;
-        width: 85%;
+        width: 100%;
         overflow: hidden;
-        padding: 1.5em 0.5em;
+        padding: 1.5em 1em 1.5em 0.5em;
         position: relative;
-        left: 30px;
+        left: 11px;
 
         &:first-of-type {
             margin-bottom: 1em;
