@@ -324,6 +324,7 @@ svg:not([fill]) {
   --color-bgtext: #0084FF;
   --color-orange: #FFB729;
   --color-white: #fcfcfc;
+  --color-subBG-white: #F9F9F9;
   --color-skyblue: #3DA4F1;
   --color-gray: #eeeeee;
   --color-btn-white: #ffffff;
@@ -446,6 +447,20 @@ a:hover {
   box-shadow: 7px 2px 9px 6px rgba(0, 0, 0, 0.1);
 }
 
+.l-backgroundgray {
+  width: 84%;
+  margin: 0 auto;
+  background: var(--color-subBG-white);
+  position: relative;
+  z-index: -2;
+}
+
+.l-philosophy__companyname {
+  overflow: hidden;
+  text-align: right;
+  padding-bottom: 10em;
+}
+
 .l-spacer {
   padding: 4rem 0;
 }
@@ -508,6 +523,34 @@ a:hover {
   height: 110%;
   top: 0;
   right: 0;
+}
+
+.l-submv {
+  min-height: 540px;
+  position: relative;
+}
+.l-submv:after {
+  position: absolute;
+  content: "";
+  border-radius: 12px 12px 12px 0;
+  background: var(--color-subBG-white);
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  height: 95%;
+}
+.l-submv:before {
+  position: absolute;
+  content: "";
+  border-radius: 0 0 12px 0;
+  width: 45%;
+  height: 100%;
+  background-color: var(--color-main);
+}
+.l-submv__mask {
+  width: 100%;
+  background-color: var(--color-main);
+  position: relative;
 }
 
 .l-interview {
@@ -640,6 +683,39 @@ a:hover {
   margin: 0 auto;
 }
 
+.c-headingSub {
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+}
+.c-headingSub:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 55%;
+  height: 1px;
+  background-color: var(--color-btn-white);
+  top: 52%;
+  right: 56%;
+  transform: rotate(123deg);
+}
+.c-headingSub__en {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-btn-white);
+  font-size: 6.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.c-headingSub__title {
+  font-size: 1.25rem;
+  color: var(--color-btn-white);
+  padding-top: 1em;
+  padding-left: 3em;
+}
+.c-headingSub.-center {
+  margin: 0 auto;
+}
+
 .c-headingLv2 {
   position: relative;
   font-size: 1.25rem;
@@ -718,6 +794,14 @@ a:hover {
 }
 .c-btn span:hover:before, .c-btn span:hover:after {
   transform: scale(1);
+}
+
+.c-companyname {
+  color: var(--color-bgtext);
+  opacity: 0.2;
+  font-family: "Roboto", sans-serif;
+  font-size: 12.5rem;
+  font-weight: bold;
 }
 
 .c-text {
@@ -950,6 +1034,22 @@ a:hover {
   background-color: rgba(255, 248, 54, 0.74);
 }
 
+.p-philosophy__title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.125em;
+}
+.p-philosophy__box {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 8.25em;
+}
+.p-philosophy__box p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
 .p-mv__img {
   padding-top: 1.5em;
   width: 90%;
@@ -988,6 +1088,21 @@ a:hover {
   padding-right: 1em;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
+}
+
+.p-submv {
+  position: relative;
+  z-index: 40;
+}
+.p-submv__img {
+  z-index: 50;
+  position: absolute;
+  content: "";
+  right: 8%;
+  top: 50px;
+}
+.p-submv__title {
+  padding-top: 10em;
 }
 
 .p-leadsection {
