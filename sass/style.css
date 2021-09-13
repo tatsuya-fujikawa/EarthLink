@@ -575,6 +575,10 @@ a:hover {
   left: 0;
 }
 
+.l-corevalue {
+  margin-bottom: 10em;
+}
+
 .l-leadsection {
   overflow: hidden;
 }
@@ -1068,6 +1072,37 @@ a:hover {
   font-size: 1.25rem;
   font-weight: bold;
   padding-bottom: 1em;
+}
+
+.p-corevalue {
+  overflow: hidden;
+}
+.p-corevalue__lead {
+  padding-top: 5em;
+  margin: 0 auto;
+  width: 80%;
+}
+.p-corevalue__list {
+  padding-top: 5em;
+  margin: 0 auto;
+  width: 80%;
+}
+.p-corevalue__list-item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 1.25rem;
+  color: var(--color-text);
+}
+.p-corevalue__list:after {
+  position: absolute;
+  content: "earth link";
+  color: var(--color-bgtext);
+  opacity: 0.08;
+  font-family: "Roboto", sans-serif;
+  top: 27%;
+  right: 0;
+  font-size: 12.5rem;
+  font-weight: bold;
 }
 
 .p-mv__img {
