@@ -1222,6 +1222,9 @@ a:hover {
 .p-about__left-lead {
   padding-top: 3em;
 }
+.p-about__left-lead p {
+  color: var(--color-white);
+}
 .p-about__right {
   width: 60%;
   margin-left: 9em;
