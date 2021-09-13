@@ -79,3 +79,42 @@
     padding-top: 4em;
   }
 }
+
+.p-messageSec3 {
+  &__subTitle {
+    padding-top: 2.75em;
+  }
+  &__text {
+    padding-top: 5.5em;
+    text-align: center;
+    font-size: rem(14);
+    text-decoration: underline;
+  }
+  &__box {
+    width: 83%;
+    margin: 0 auto;
+    padding-top: 5.5em;
+
+    &-wrap {
+      padding-top: 2em;
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+    }
+
+    &-title {
+      font-size: rem(24);
+      font-weight: bold;
+    }
+    &-text {
+      font-size: rem(14);
+      padding-top: 1.5em;
+      padding-left: 1em;
+
+      p {
+        line-height: 40px;
+      }
+    }
+  }
+}
