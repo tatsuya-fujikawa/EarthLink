@@ -71,6 +71,13 @@
     }
 }
 
+.c-heading__blue {
+    font-size: rem(40);
+    font-weight: bold;
+    color: var(--color-main);
+    letter-spacing: 0.05em;
+}
+
 .c-headingLv2 {
     position: relative;
     font-size: rem(20);

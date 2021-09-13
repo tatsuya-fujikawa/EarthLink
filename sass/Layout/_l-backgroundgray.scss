@@ -4,4 +4,10 @@
   background: var(--color-subBG-white);
   position: relative;
   z-index: -2;
+
+  &.-wide {
+    width: 100%;
+  }
+
+
 }

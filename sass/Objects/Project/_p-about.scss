@@ -8,6 +8,9 @@
         }
         &-lead {
             padding-top: 3em;
+            p {
+                color: var(--color-white);
+            }
         }
     }
     &__right {
