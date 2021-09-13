@@ -1,0 +1,81 @@
+.p-message {
+  overflow: hidden;
+  &__box {
+    padding-top: 5em;
+    width: 83%;
+    color: var(--color-text);
+    margin: 0 auto;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 437px;
+      height: 437px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,239,186,1) 0%, rgba(255,197,81,1) 100%);
+      z-index: -10;
+      top: -41%;
+      right: -30%;
+      opacity: 0.26;
+    }
+
+    &-text {
+      font-size: rem(16);
+      line-height: 40px;
+    }
+  }
+
+ 
+}
+
+.p-messageSec2 {
+  &__half {
+    &-item {
+
+      &.-left {
+        margin-top: 5em;
+        position: relative;
+        z-index: 20;
+        left: -20px;
+
+        img {
+          border-radius: 12px;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          background: linear-gradient(0deg, rgba(0,78,180,1) 0%, rgba(7,77,183,1) 0%, rgba(0,105,203,1) 100%);
+          width: 537px;
+          height: 880px;
+          border-radius: 12px;
+          top: -50%;
+          right: 50%;
+        }
+      }
+
+
+    }
+  }
+
+  &__lead {
+    font-size: rem(24);
+    font-weight: bold;
+    color: var(--color-main);
+
+    &-text {
+      &.-right {
+        text-align: right;
+        padding-top: 0.75em;
+      }
+    }
+  }
+
+  &__centense {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4em;
+  }
+}

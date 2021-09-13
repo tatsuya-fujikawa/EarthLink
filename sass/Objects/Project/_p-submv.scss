@@ -9,6 +9,10 @@
     content: '';
     right: 8%;
     top: 50px;
+    
+    img {
+      border-radius: 12px 0 0 12px;
+    }
   }
 
   &__title {

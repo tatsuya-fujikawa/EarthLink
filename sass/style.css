@@ -330,7 +330,7 @@ svg:not([fill]) {
   --color-btn-white: #ffffff;
   --color-bg-gray: #F5F5F5;
   --color-footer-line: #5298C5;
-  --color-text: #232323;
+  --color-text: #333333;
   --color-alert: #d00000;
 }
 
@@ -453,6 +453,9 @@ a:hover {
   background: var(--color-subBG-white);
   position: relative;
   z-index: -2;
+}
+.l-backgroundgray.-wide {
+  width: 100%;
 }
 
 .l-philosophy__companyname {
@@ -716,6 +719,13 @@ a:hover {
   margin: 0 auto;
 }
 
+.c-heading__blue {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-main);
+  letter-spacing: 0.05em;
+}
+
 .c-headingLv2 {
   position: relative;
   font-size: 1.25rem;
@@ -806,7 +816,8 @@ a:hover {
 
 .c-text {
   font-size: 0.875rem;
-  line-height: 2em;
+  line-height: 2.25em;
+  color: var(--color-text);
 }
 
 .c-card {
@@ -1006,8 +1017,9 @@ a:hover {
   top: -10px;
 }
 .p-navigation__bottom {
-  position: relative;
-  padding-top: 3em;
+  position: fixed;
+  bottom: 30px;
+  right: 0;
 }
 .p-navigation__bottom a {
   display: block;
@@ -1016,11 +1028,11 @@ a:hover {
   background-color: var(--color-orange);
   border-radius: 4px;
   display: block;
-  width: 85%;
+  width: 100%;
   overflow: hidden;
-  padding: 1.5em 0.5em;
+  padding: 1.5em 1em 1.5em 0.5em;
   position: relative;
-  left: 30px;
+  left: 11px;
 }
 .p-navigation__bnr:first-of-type {
   margin-bottom: 1em;
@@ -1101,8 +1113,73 @@ a:hover {
   right: 8%;
   top: 50px;
 }
+.p-submv__img img {
+  border-radius: 12px 0 0 12px;
+}
 .p-submv__title {
   padding-top: 10em;
+}
+
+.p-message {
+  overflow: hidden;
+}
+.p-message__box {
+  padding-top: 5em;
+  width: 83%;
+  color: var(--color-text);
+  margin: 0 auto;
+  position: relative;
+}
+.p-message__box:after {
+  content: "";
+  position: absolute;
+  width: 437px;
+  height: 437px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffefba 0%, #ffc551 100%);
+  z-index: -10;
+  top: -41%;
+  right: -30%;
+  opacity: 0.26;
+}
+.p-message__box-text {
+  font-size: 1rem;
+  line-height: 40px;
+}
+
+.p-messageSec2__half-item.-left {
+  margin-top: 5em;
+  position: relative;
+  z-index: 20;
+  left: -20px;
+}
+.p-messageSec2__half-item.-left img {
+  border-radius: 12px;
+}
+.p-messageSec2__half-item.-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(0deg, #004eb4 0%, #074db7 0%, #0069cb 100%);
+  width: 537px;
+  height: 880px;
+  border-radius: 12px;
+  top: -50%;
+  right: 50%;
+}
+.p-messageSec2__lead {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-main);
+}
+.p-messageSec2__lead-text.-right {
+  text-align: right;
+  padding-top: 0.75em;
+}
+.p-messageSec2__centense {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 4em;
 }
 
 .p-leadsection {
