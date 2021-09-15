@@ -95,3 +95,20 @@
         transform: rotate(-54deg);
     }
 }
+
+.c-headingLv3 {
+    font-size: rem(28);
+    font-weight: bold;
+    color: var(--color-main);
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        background-color: var(--color-main);
+        bottom: -3px;
+        left: 0;
+    }
+}
