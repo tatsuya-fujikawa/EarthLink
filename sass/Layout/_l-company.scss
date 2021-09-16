@@ -1,0 +1,32 @@
+.l-company {
+  &__flex {
+    display: flex;
+    width: 90%;
+
+    &.-wide {
+      width: 100%;
+    }
+
+    &-item {
+
+      &.-title {
+        min-width: 30%;
+
+        &.-history {
+          min-width: 27%;
+        }
+      }
+      &.-table {
+        flex-grow: 1;
+      }
+      &.-map {
+        flex-grow: 1;
+      }
+      &.-list {
+        width: 44%;
+      }
+
+
+    }
+  }
+}
