@@ -4,6 +4,7 @@
 
   &__half {
     display: flex;
+    flex-wrap: wrap;
 
     &-item {
       width: 50%;
