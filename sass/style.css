@@ -330,6 +330,7 @@ svg:not([fill]) {
   --color-gray: #eeeeee;
   --color-btn-white: #ffffff;
   --color-bg-gray: #F5F5F5;
+  --color-border-gray: #c1c1c1;
   --color-footer-line: #5298C5;
   --color-text: #333333;
   --color-alert: #d00000;
@@ -627,6 +628,29 @@ a:hover {
   left: 0;
 }
 
+.l-company__flex {
+  display: flex;
+  width: 90%;
+}
+.l-company__flex.-wide {
+  width: 100%;
+}
+.l-company__flex-item.-title {
+  min-width: 30%;
+}
+.l-company__flex-item.-title.-history {
+  min-width: 27%;
+}
+.l-company__flex-item.-table {
+  flex-grow: 1;
+}
+.l-company__flex-item.-map {
+  flex-grow: 1;
+}
+.l-company__flex-item.-list {
+  width: 44%;
+}
+
 .l-culture {
   overflow: hidden;
 }
@@ -755,6 +779,22 @@ a:hover {
   transform: rotate(-54deg);
 }
 
+.c-headingLv3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--color-main);
+  position: relative;
+}
+.c-headingLv3:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-main);
+  bottom: -3px;
+  left: 0;
+}
+
 .c-flex {
   display: flex;
 }
@@ -763,6 +803,12 @@ a:hover {
 }
 .c-flex__half-item {
   width: 50%;
+}
+.c-flex__oneThird {
+  display: flex;
+}
+.c-flex__oneThird-item {
+  width: calc(100% / 3);
 }
 
 .c-btn {
@@ -1143,6 +1189,48 @@ a:hover {
   padding-right: 1em;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
+}
+
+.p-company__table-row {
+  display: flex;
+  padding-bottom: 1.6em;
+  padding-top: 1.6em;
+  border-bottom: 1px solid var(--color-border-gray);
+}
+.p-company__table-row:first-of-type {
+  padding-top: 0;
+}
+.p-company__table-row dt {
+  min-width: 180px;
+}
+.p-company__name {
+  font-size: 0.875rem;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.75em;
+}
+.p-company__name:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-border-gray);
+  bottom: 0;
+  left: 0;
+}
+.p-company__address-address {
+  font-size: 0.875rem;
+}
+.p-company__list li {
+  font-size: 0.875rem;
+}
+.p-company__history-row {
+  display: flex;
+  font-size: 0.875rem;
+}
+.p-company__history-row dt {
+  min-width: 155px;
 }
 
 .p-submv {
