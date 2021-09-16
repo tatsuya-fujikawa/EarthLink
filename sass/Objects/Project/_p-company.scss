@@ -41,4 +41,21 @@
     }
   }
 
+  &__list {
+    li {
+      font-size: rem(14);
+    }
+  }
+
+  &__history {
+    &-row {
+      display: flex;
+      font-size: rem(14);
+
+      dt {
+        min-width: 155px;
+      }
+    }
+  }
+
 }

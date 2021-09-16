@@ -638,11 +638,17 @@ a:hover {
 .l-company__flex-item.-title {
   min-width: 30%;
 }
+.l-company__flex-item.-title.-history {
+  min-width: 27%;
+}
 .l-company__flex-item.-table {
   flex-grow: 1;
 }
 .l-company__flex-item.-map {
   flex-grow: 1;
+}
+.l-company__flex-item.-list {
+  width: 44%;
 }
 
 .l-culture {
@@ -797,6 +803,12 @@ a:hover {
 }
 .c-flex__half-item {
   width: 50%;
+}
+.c-flex__oneThird {
+  display: flex;
+}
+.c-flex__oneThird-item {
+  width: calc(100% / 3);
 }
 
 .c-btn {
@@ -1209,6 +1221,16 @@ a:hover {
 }
 .p-company__address-address {
   font-size: 0.875rem;
+}
+.p-company__list li {
+  font-size: 0.875rem;
+}
+.p-company__history-row {
+  display: flex;
+  font-size: 0.875rem;
+}
+.p-company__history-row dt {
+  min-width: 155px;
 }
 
 .p-submv {
