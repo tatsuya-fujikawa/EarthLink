@@ -122,3 +122,20 @@
 
     }
 }
+
+.c-headingLv4 {
+    font-size: rem(28);
+    font-weight: bold;
+    color: var(--color-main);
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 1px;
+        background-color: var(--color-main);
+        bottom: -4px;
+        left: 0;
+    }
+}

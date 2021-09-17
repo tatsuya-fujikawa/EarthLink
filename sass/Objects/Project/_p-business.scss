@@ -1,0 +1,51 @@
+.p-business {
+    &__box {
+        padding: 2em;
+        border: 3px solid var(--color-main);
+        border-radius: 12px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            border: 3px solid var(--color-business-border);
+            display: block;
+            width: 101%;
+            height: 101%;
+            top: 12px;
+            left: -18px;
+            border-radius: 12px;
+            opacity: 0.43;
+            z-index: -1;
+        }
+    }
+
+    &__textWrap {
+        padding-top: 4.5em;
+        width: 70%;
+    }
+
+    &__cardWrap {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3em;
+        padding-bottom: 3em;
+
+    }
+    &__card {
+        &-wrap {
+            border: 2px solid var(--color-main);
+            border-radius: 12px;
+            padding: 1em;
+            max-width: 200px;
+            margin: 1.5em auto 0;
+        }
+
+        &-title {
+            text-align: center;
+            color: var(--color-main);
+        }
+        
+    }
+
+}
