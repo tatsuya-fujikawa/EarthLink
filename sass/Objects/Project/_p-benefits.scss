@@ -37,4 +37,43 @@
     &__button {
         padding-top: 5em;
     }
+
+    &__card {
+        width: 80%;
+        margin: 0 auto 5em;
+
+        &-title {
+            text-align: center;
+            position: relative;
+            font-size: rem(16);
+            font-weight: bold;
+            z-index: 10;
+
+            span {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 44px;
+                    height: 44px;
+                    opacity: .14;
+                    background-color: var(--color-benefits-circle);
+                    z-index: -1;
+                    top: -50%;
+                    left: -170%;
+                }
+            }
+
+            
+        }
+
+        &-bottom {
+            padding-top: 3em;
+            display: flex;
+            align-items: center;
+        }
+    }
 }

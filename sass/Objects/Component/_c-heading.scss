@@ -97,18 +97,28 @@
 }
 
 .c-headingLv3 {
-    font-size: rem(28);
-    font-weight: bold;
     color: var(--color-main);
-    position: relative;
 
-    &:after {
-        content: '';
-        position: absolute;
-        width: 40px;
-        height: 1px;
-        background-color: var(--color-main);
-        bottom: -3px;
-        left: 0;
+    &__jp {
+        font-size: rem(32);
+        display: inline-block;
+        padding-right: 3em;
+    }
+    &__en {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: rem(20);
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: var(--color-main);
+            width: 28px;
+            height: 1px;
+            bottom: 0;
+            left: -65px;
+        }
+
     }
 }
