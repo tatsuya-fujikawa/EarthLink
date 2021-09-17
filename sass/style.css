@@ -325,6 +325,7 @@ svg:not([fill]) {
   --color-orange: #FFB729;
   --color-yellow: #F2A900;
   --color-white: #fcfcfc;
+  --color-benefits-circle: #004EB4;
   --color-subBG-white: #F9F9F9;
   --color-skyblue: #3DA4F1;
   --color-gray: #eeeeee;
@@ -635,7 +636,7 @@ a:hover {
   overflow: hidden;
 }
 .l-benefits__wrap {
-  padding-top: 4.5em;
+  padding-top: 5em;
 }
 
 .l-slide {
@@ -1450,7 +1451,7 @@ a:hover {
 }
 .p-benefits__card {
   width: 80%;
-  margin: 0 auto 4em;
+  margin: 0 auto 5em;
 }
 .p-benefits__card-title {
   text-align: center;
@@ -1469,14 +1470,16 @@ a:hover {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  opacity: 0.44;
-  background-color: var(--color-sub);
+  opacity: 0.14;
+  background-color: var(--color-benefits-circle);
   z-index: -1;
   top: -50%;
   left: -170%;
 }
 .p-benefits__card-bottom {
   padding-top: 3em;
+  display: flex;
+  align-items: center;
 }
 
 .p-footer {
