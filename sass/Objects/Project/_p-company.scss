@@ -1,0 +1,61 @@
+.p-company {
+  &__table {
+    &-row {
+      display: flex;
+      padding-bottom: 1.6em;
+      padding-top: 1.6em;
+      border-bottom: 1px solid var(--color-border-gray);
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+
+      dt {
+        min-width: 180px;
+
+      }
+    }
+  }
+
+  &__name {
+    font-size: rem(14);
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.75em;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: var(--color-border-gray);
+      bottom: 0;
+      left: 0;
+    }
+
+  }
+
+  &__address {
+    &-address {
+      font-size: rem(14);
+    }
+  }
+
+  &__list {
+    li {
+      font-size: rem(14);
+    }
+  }
+
+  &__history {
+    &-row {
+      display: flex;
+      font-size: rem(14);
+
+      dt {
+        min-width: 155px;
+      }
+    }
+  }
+
+}

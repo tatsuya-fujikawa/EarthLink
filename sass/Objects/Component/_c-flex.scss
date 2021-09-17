@@ -10,4 +10,12 @@
       width: 50%;
     }
   }
+
+  &__oneThird {
+    display: flex;
+
+    &-item {
+      width: calc(100% / 3);
+    }
+  }
 }
