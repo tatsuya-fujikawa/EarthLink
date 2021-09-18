@@ -784,7 +784,6 @@ a:hover {
 }
 
 .c-headingLv3 {
-
   color: var(--color-main);
 }
 .c-headingLv3__jp {
@@ -806,7 +805,6 @@ a:hover {
   height: 1px;
   bottom: 0;
   left: -65px;
-
 }
 
 .c-flex {
