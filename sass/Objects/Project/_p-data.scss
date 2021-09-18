@@ -1,0 +1,91 @@
+.p-data {
+    &__circle {
+        margin: 0 auto;
+        width: 360px;
+        height: 360px;
+        background-color: var(--color-subBG-white);
+        border-radius: 50%;
+        position: relative;
+
+        &-inner {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        &-number {
+            font-size: rem(40);
+            color: var(--color-main);
+            position: relative;
+            padding-bottom: 0.25em;
+
+            &:after {
+                position: absolute;
+                content: '';
+                background-color: var(--color-main);
+                width: 30px;
+                height: 1px;
+                display: inline-block;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+
+        &-title {
+            font-size: rem(24);
+            color: var(--color-main);
+        }
+    }
+
+    &__inner {
+        position: relative;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    &__card {
+        display: inline-block;
+        padding: 1em 2.25em;
+        background-color: var(--color-btn-white);
+        border-radius: 12px;
+        border: 2px solid var(--color-main);
+        position: absolute;
+
+        
+        &-top {
+            font-size: rem(14);
+            font-weight: bold;
+            color: var(--color-main);
+        }
+        &-center {
+            font-size: rem(20);
+            color: var(--color-main);
+
+            span {
+                font-size: rem(60);
+                padding-right: 0.1em;
+            }
+        }
+
+        &-bottom {
+            font-size: rem(14);
+        }
+
+    }
+}
+
+.p-data__card.-number1 {
+    top:0;
+    left: 13%;
+}
+
+.p-data__card.-number2 {
+    top:30%;
+    right: 3%;
+}
+
+.p-data__card.-number3 {
+    top:70%;
+    left: 8%;
+}
