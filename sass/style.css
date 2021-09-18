@@ -1458,11 +1458,17 @@ a:hover {
   padding-top: 4.5em;
   width: 70%;
 }
+.p-business__textWrap.-half {
+  width: 50%;
+}
 .p-business__cardWrap {
   display: flex;
   justify-content: space-between;
   padding-top: 3em;
   padding-bottom: 3em;
+}
+.p-business__card {
+  position: relative;
 }
 .p-business__card-wrap {
   border: 2px solid var(--color-main);
@@ -1474,6 +1480,9 @@ a:hover {
 .p-business__card-title {
   text-align: center;
   color: var(--color-main);
+}
+.p-business__card.-wide {
+  margin-top: -10em;
 }
 
 .p-teamwork__heading {

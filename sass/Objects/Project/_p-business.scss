@@ -23,6 +23,10 @@
     &__textWrap {
         padding-top: 4.5em;
         width: 70%;
+
+        &.-half {
+            width: 50%;
+        }
     }
 
     &__cardWrap {
@@ -33,6 +37,7 @@
 
     }
     &__card {
+        position: relative;
         &-wrap {
             border: 2px solid var(--color-main);
             border-radius: 12px;
@@ -46,6 +51,9 @@
             color: var(--color-main);
         }
         
+        &.-wide {
+            margin-top: -10em;
+        }
     }
 
 }
