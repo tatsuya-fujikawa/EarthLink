@@ -50,6 +50,13 @@
         transform: rotate(123deg);
     }
 
+    &.-data {
+        &:after {
+            width: 88%;
+            right: 30%;
+        }
+    }
+
     &__en {
         color: transparent;
         -webkit-text-stroke: 1px var(--color-btn-white);
