@@ -1223,6 +1223,9 @@ a:hover {
   font-size: 1.5rem;
   color: var(--color-main);
 }
+.p-data__circle-img img.small {
+  width: 50%;
+}
 .p-data__inner {
   position: relative;
   padding-top: 5em;
@@ -1266,6 +1269,62 @@ a:hover {
 .p-data__card.-number3 {
   top: 70%;
   left: 8%;
+}
+
+.p-data__card.-number4 {
+  width: 23%;
+  top: 0%;
+  left: 13%;
+}
+
+.p-data__card.-number5 {
+  width: 23%;
+  top: 0%;
+  right: 13%;
+}
+
+.p-data__card.-number6 {
+  width: 23%;
+  top: 40%;
+  left: 0%;
+}
+
+.p-data__card.-number7 {
+  width: 23%;
+  top: 40%;
+  right: 0%;
+}
+
+.p-data__card.-number8 {
+  width: 23%;
+  top: 80%;
+  left: 13%;
+}
+
+.p-data__card.-number9 {
+  width: 23%;
+  top: 80%;
+  right: 13%;
+}
+
+.p-data__card.-number10 {
+  top: 5%;
+  left: 3%;
+}
+
+.p-data__card.-number11 {
+  top: 5%;
+  right: 3%;
+}
+
+.p-data__card.-number12 {
+  top: 70%;
+  left: 8%;
+}
+
+.p-data__card.-number13 {
+  top: 70%;
+  right: 8%;
 }
 
 .p-mv__img {
