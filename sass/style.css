@@ -1039,7 +1039,7 @@ a:hover {
   transition: 0.3s;
 }
 .p-header a:hover {
-  opacity: 0.9;
+  opacity: 0.7;
   color: #bdbdbd;
   transition: 0.3s;
 }
@@ -1389,12 +1389,15 @@ a:hover {
 }
 .p-mv__catch {
   position: absolute;
-  bottom: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .p-mv__catch-lead {
-  font-weight: 400;
+  font-weight: bold;
   font-size: 3rem;
   padding-left: 1em;
+  min-width: 805px;
   position: relative;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -1979,7 +1982,7 @@ a:hover {
   transition: 0.3s;
 }
 .p-footer a:hover {
-  opacity: 0.9;
+  opacity: 0.7;
   color: #bdbdbd;
   transition: 0.3s;
 }
@@ -2142,6 +2145,49 @@ a:hover {
 
 .u-pickup {
   color: var(--color-orange);
+}
+
+.u-arrow {
+  position: relative;
+  color: var(--color-white);
+  vertical-align: middle;
+  text-decoration: none;
+}
+.u-arrow:before, .u-arrow:after {
+  position: absolute;
+  content: "";
+  vertical-align: middle;
+  transition: 0.3s;
+  display: inline-block;
+}
+.u-arrow:after {
+  right: -20px;
+  top: 7px;
+  width: 15px;
+  height: 16px;
+  border-top: 2px solid var(--color-white);
+  border-right: 2px solid var(--color-white);
+}
+.u-arrow:before {
+  width: 19px;
+  top: 15px;
+  height: 2px;
+  right: -20px;
+  background: var(--color-white);
+  transform: rotate(135deg);
+}
+.u-arrow:hover:before, .u-arrow:hover:after {
+  opacity: 0.7;
+}
+.u-arrow.-small:before {
+  width: 10px;
+  top: 11px;
+  right: -15px;
+}
+.u-arrow.-small:after {
+  width: 9px;
+  height: 10px;
+  right: -15px;
 }
 
 .u-spacer__m {

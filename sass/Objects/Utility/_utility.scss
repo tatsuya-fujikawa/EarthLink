@@ -81,6 +81,54 @@
 .u-pickup {
   color: var(--color-orange);
 }
+.u-arrow {
+  position:relative;
+  color: var(--color-white);
+  vertical-align: middle;
+  text-decoration: none;
+
+  &:before,&:after {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    transition: 0.3s;
+    display: inline-block;
+  }
+  &:after {
+    right: -20px;
+    top: 7px;
+    width: 15px;
+    height: 16px;
+    border-top: 2px solid var(--color-white);
+    border-right: 2px solid var(--color-white);
+  }
+  &:before {
+    width: 19px;
+    top: 15px;
+    height: 2px;
+    right: -20px;
+    background: var(--color-white);
+    transform: rotate(135deg);
+  }
+  &:hover {
+    &:before,&:after {
+      opacity: 0.7;
+    }
+  }
+
+  &.-small {
+    &:before {
+      width: 10px;
+      top: 11px;
+      right: -15px;
+    }
+    &:after {
+      width: 9px;
+      height: 10px;
+      right: -15px;
+    }
+  }
+}
 
 .u-spacer__m  {
   height: 40px;
