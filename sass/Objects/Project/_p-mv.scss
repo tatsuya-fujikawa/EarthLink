@@ -25,12 +25,15 @@
     } 
     &__catch {
         position: absolute;
-        bottom: 20%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
 
         &-lead {
-            font-weight: 400;
+            font-weight: bold;
             font-size: rem(48);
             padding-left: 1em;
+            min-width: 805px;
             position: relative;
             padding-top: 0.2em;
             padding-bottom: 0.2em;
