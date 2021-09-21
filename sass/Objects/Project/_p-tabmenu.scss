@@ -66,5 +66,44 @@
 
     &__occupation {
         font-size: rem(24);
+        padding-bottom: 2em;
+    }
+    &__detail {
+        width: 70%;
+        margin: 4.675rem auto 0;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 40%;
+            height: 1px;
+            background-color: var(--color-main);
+            left: -50%;
+            top: 20px;
+        }
+
+        &-text {
+            padding-bottom: 2em;
+        }
+    }
+    &__button {
+        text-align: center;
+    }
+
+    &__bg {
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            width: 88%;
+            height: 107%;
+            background-color: var(--color-gray);
+            top: 0;
+            z-index: -1;
+            border-radius: 12px;
+            right: 0;
+            top: 25px;
+        }
     }
 }

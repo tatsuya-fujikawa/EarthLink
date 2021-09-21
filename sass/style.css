@@ -1640,6 +1640,42 @@ a:hover {
 }
 .p-tabmenu__occupation {
   font-size: 1.5rem;
+  padding-bottom: 2em;
+}
+.p-tabmenu__detail {
+  width: 70%;
+  margin: 4.675rem auto 0;
+  position: relative;
+}
+.p-tabmenu__detail:before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background-color: var(--color-main);
+  left: -50%;
+  top: 20px;
+}
+.p-tabmenu__detail-text {
+  padding-bottom: 2em;
+}
+.p-tabmenu__button {
+  text-align: center;
+}
+.p-tabmenu__bg {
+  position: relative;
+}
+.p-tabmenu__bg:after {
+  position: absolute;
+  content: "";
+  width: 88%;
+  height: 107%;
+  background-color: var(--color-gray);
+  top: 0;
+  z-index: -1;
+  border-radius: 12px;
+  right: 0;
+  top: 25px;
 }
 
 .p-occupation__bggray {
