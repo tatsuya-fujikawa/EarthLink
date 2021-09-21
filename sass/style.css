@@ -1575,6 +1575,15 @@ a:hover {
   line-height: 40px;
 }
 
+.p-office__lead {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 2em;
+}
+.p-office__leadingSection-text {
+  font-size: 0.875rem;
+}
+
 .p-leadsection {
   position: relative;
 }
