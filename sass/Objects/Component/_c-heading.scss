@@ -57,6 +57,15 @@
         }
     }
 
+    &.-occupation {
+        line-height: 120px;
+        margin-top: -2em;
+        &:after {
+            width: 30%;
+            right: 78%;
+        }
+    }
+
     &__en {
         color: transparent;
         -webkit-text-stroke: 1px var(--color-btn-white);
@@ -69,8 +78,11 @@
         font-size: rem(20);
         color: var(--color-btn-white);
         padding-top: 1em;
-        // text-align: center;
         padding-left: 3em;
+
+        &.-occupation {
+            padding-top: 0;
+        }
     }
 
     &.-center {
@@ -120,6 +132,7 @@
         &:before {
             content: '';
             position: absolute;
+            display: inline-block;
             background-color: var(--color-main);
             width: 28px;
             height: 1px;
@@ -128,6 +141,13 @@
         }
 
     }
+}
+
+.c-headingLv3.-occupation {
+    color: var(--color-white);
+}
+.c-headingLv3__en.-occupation:before {
+    background-color: var(--color-white);
 }
 
 .c-headingLv4 {
