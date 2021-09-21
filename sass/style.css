@@ -614,6 +614,7 @@ a:hover {
   position: relative;
   z-index: 0;
   overflow: hidden;
+  padding-bottom: 1em;
 }
 .l-about:before {
   position: absolute;
@@ -624,10 +625,21 @@ a:hover {
   background-repeat: no-repeat;
   border-radius: 12px;
   max-height: 507px;
-  width: 90%;
+  width: 85%;
   height: 100%;
   top: 0;
   left: 0;
+}
+.l-about:after {
+  position: absolute;
+  content: "";
+  z-index: -12;
+  width: 85%;
+  height: 95%;
+  top: 15px;
+  left: 20px;
+  border-radius: 12px;
+  background: linear-gradient(0deg, #004eb4 0%, #074db7 0%, #0069cb 100%);
 }
 
 .l-business {
@@ -1115,9 +1127,11 @@ a:hover {
 .p-navigation__circle img {
   position: absolute;
   z-index: 110;
-  padding: 1em;
-  top: 50%;
-  right: 34%;
+  padding: 1em 0;
+  top: 60%;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .p-navigation__humberger {
   text-align: center;
@@ -1870,7 +1884,7 @@ a:hover {
   position: absolute;
   content: "";
   background: linear-gradient(0deg, #004eb4 0%, #074db7 0%, #0069cb 100%);
-  width: 90%;
+  width: 80%;
   height: 98%;
   top: 8%;
   right: 0;

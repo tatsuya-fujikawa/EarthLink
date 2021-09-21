@@ -12,9 +12,11 @@
         & img {
             position: absolute;
             z-index: 110;
-            padding: 1em;
-            top: 50%;
-            right: 34%;
+            padding: 1em 0;
+            top: 60%;
+            width: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
     }
 
