@@ -1,0 +1,12 @@
+.p-office {
+  &__lead {
+    font-size: rem(24);
+    font-weight: bold;
+    padding-bottom: 2em;
+  }
+  &__leadingSection {
+    &-text {
+      font-size: rem(14);
+    }
+  }
+}
