@@ -1,0 +1,31 @@
+.l-senior {
+  position: relative;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: #EFF4F8;
+    border-radius: 12px;
+    z-index: -1;
+  }
+  &__inner {
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__flex {
+    display: flex;
+    justify-content: center;
+
+    &-item {
+      &.-left {
+        width: 40%;
+      }
+      &.-right {
+        width: 60%;
+        margin-top: -6em;
+      }
+    }
+  }
+}
