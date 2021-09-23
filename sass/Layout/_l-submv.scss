@@ -41,5 +41,12 @@
     position: relative;
   }
 
+  &.-interview {
+    background-color: var(--color-subBG-white);
+    &:before {
+      height: 85%;
+    }
+  }
+
 
 }

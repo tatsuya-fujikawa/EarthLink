@@ -1,0 +1,28 @@
+.p-senior {
+  &__lead {
+    font-size: rem(16);
+    line-height: 38px;
+    font-weight: bold;
+  }
+  &__img {
+    text-align: center;
+    padding-bottom: 2em;
+
+  }
+
+  &__wrap {
+    padding-bottom: 3.75rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+  &__question {
+    font-weight: bold;
+    color: var(--color-main);
+    padding-bottom: 1.25rem;
+  }
+  &__answer {
+    font-size: rem(14);
+    line-height: 24px;
+  }
+
+}
