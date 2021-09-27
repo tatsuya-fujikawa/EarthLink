@@ -6,7 +6,7 @@ let swiper = new Swiper('.swiper-container',{
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidesPerView: 3,
+  slidesPerView: 1,
   breakpoints: {
     768: {
       slidesPerView: 3,

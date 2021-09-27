@@ -2,6 +2,9 @@
     &__left {
         color: var(--color-white);
         width: 40%;
+        @include mq('sp') {
+            width: 100%;
+        }
         &-top {
             margin-top: 1em;
             margin-left: 1em;
@@ -16,6 +19,11 @@
     &__right {
         width: 50%;
         margin-left: 5em;
+
+        @include mq('sp') {
+            width: 100%;
+            margin-left: 1em;
+        }
     }
     &__btnWrap {
         display: flex;
