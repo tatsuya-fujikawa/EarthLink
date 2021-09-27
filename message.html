@@ -108,7 +108,10 @@
       <div class="l-spacer -section">
         <div class="c-flex__half">
           <div class="c-flex__half-item p-messageSec2__half-item -left">
-            <img src="./img/message/message_01.png" alt="">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./img/message/sp_message_01.png">
+              <img src="./img/message/message_01.png" alt="">
+            </picture>
           </div><!-- /.c-flex__half-item -->
           <div class="c-flex__half-item p-messageSec2__half-item -right">
             <div class="p-messageSec2__lead">
@@ -135,7 +138,7 @@
             <img src="./img/message/message_02.png" alt="">
           </div><!-- /p-messageSec3__img -->
           <h3 class="c-heading__blue u-centerposition p-messageSec3__subTitle">アースリンクから新卒の方へ</h3><!-- /c-heading__blue -->
-          <p class="p-messageSec3__text">数ある企業の中からアースリンクを選んでくれる新卒の人に次のことを約束します。</p><!-- /p-messageSec3__text -->
+          <p class="p-messageSec3__text">数ある企業の中から<br class="sponly">アースリンクを選んでくれる新卒の人に<br class="sponly">次のことを約束します。</p><!-- /p-messageSec3__text -->
           <div class="p-messageSec3__box">
             <div class="p-messageSec3__box-wrap">
               <h4 class="p-messageSec3__box-title">①<span class="u-orange">個性を大事にします</span></h4>
@@ -188,19 +191,29 @@
                         <li><a href="corevalue.html">コアバリュー</a></li>
                     </ul>
                 </nav>
-                <nav class="p-footer__nav">
+                <nav class="p-footer__nav pconly">
                     <h3 class="p-footer__nav-title">社風について</h3>
                     <ul class="p-footer__nav-list">
                         <li><a href="office.html">オフィス風景</a></li>
                         <li><a href="teamwork.html">チームワーク</a></li>
                     </ul>
                 </nav>
-                <nav class="p-footer__nav">
+                <nav class="p-footer__nav pconly">
                     <h3 class="p-footer__nav-title">採用情報</h3> 
                     <h3 class="p-footer__nav-title"><a href="interview.html"><span class="u-arrow -small">キャリアパスと先輩社員</span></a></h3>
                     <h3 class="p-footer__nav-title"><a href="benefits.html"><span class="u-arrow -small">制度・研修</span></a></h3>
                 </nav>
-                <div class="p-footer__nav"></div><!-- /.p-footer__nav -->
+                <nav class="p-footer__nav sponly">
+                    <h3 class="p-footer__nav-title">社風について</h3>
+                    <ul class="p-footer__nav-list">
+                        <li><a href="office.html">オフィス風景</a></li>
+                        <li><a href="teamwork.html">チームワーク</a></li>
+                    </ul>
+                    <div class="u-spacer__m"></div><!-- /.u-spacer__m -->
+                    <h3 class="p-footer__nav-title">採用情報</h3> 
+                    <h3 class="p-footer__nav-title"><a href="interview.html"><span class="u-arrow -small -sp">キャリアパスと<br>先輩社員</span></a></h3>
+                    <h3 class="p-footer__nav-title"><a href="benefits.html"><span class="u-arrow -small">制度・研修</span></a></h3>
+                </nav><!-- /.p-footer__nav -->
             </div><!-- /l-footer__inner -->
         </div><!-- /.l-spacer -->
         <div class="l-spacer -section -notop">

@@ -11,6 +11,10 @@
 
   &.-radius {
     border-radius: 12px;
+
+    @include mq('sp') {
+      width: 100%;
+    }
   }
 
 

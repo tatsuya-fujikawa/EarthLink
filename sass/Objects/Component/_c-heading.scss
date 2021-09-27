@@ -86,6 +86,10 @@
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
         letter-spacing: 0.01em;
+
+        @include mq('sp') {
+            font-size: rem(72);
+        }
     }
 
     &__title {
@@ -95,6 +99,12 @@
         padding-left: 3em;
 
         &.-occupation {
+            padding-top: 0;
+        }
+
+        @include mq('sp') {
+            font-size: rem(16);
+            text-align: right;
             padding-top: 0;
         }
     }
@@ -109,6 +119,10 @@
     font-weight: bold;
     color: var(--color-main);
     letter-spacing: 0.05em;
+
+    @include mq('sp') {
+        font-size: rem(22);
+      }
 }
 
 .c-headingLv2 {
