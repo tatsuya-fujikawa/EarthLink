@@ -12,6 +12,10 @@
         top: 52%;
         right: 33%;
         transform: rotate(123deg);
+
+        @include mq('sp') {
+            right: 43%;
+        }
     }
 
     &__en {
@@ -19,6 +23,10 @@
         font-size: rem(100);
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
+
+        @include mq('sp') {
+            font-size: rem(60);
+        }
     }
 
     &__title {
@@ -26,6 +34,11 @@
         color: var(--color-main);
         padding-top: 1em;
         text-align: center;
+
+        @include mq('sp') {
+            font-size: rem(16);
+            padding-top: 0.25em;
+        }
     }
 
     &.-center {

@@ -4,12 +4,20 @@
         padding-top: 6em;
         width: 90%;
         margin: 0 auto;
+
+        @include mq('sp') {
+            padding-top: 2em;
+        }
+
     }
 
     &__imgWrap {
         margin-top: 5em;
-        // margin-left: 1em;
         position: relative;
+
+        @include mq('sp') {
+            margin-top: 0em;
+        }
 
         &:after {
             position: absolute;
@@ -22,10 +30,23 @@
             border-radius: 12px;
             // background-color: var(--color-main);
             background: linear-gradient(0deg, rgba(0,78,180,1) 0%, rgba(7,77,183,1) 0%, rgba(0,105,203,1) 100%);
+
+            @include mq('sp') {
+                z-index: 100;
+                top: -60%;
+                height: 400px;
+                width: 88%;
+            }
         }
     }
 
     &__img {
+        @include mq('sp') {
+            width: 60%;
+            position: relative;
+            z-index: 150;
+            top: -3em;
+        }
         & img {
             border-radius: 12px;
         }
@@ -36,6 +57,10 @@
 
     &__button {
         padding-top: 5em;
+        @include mq('sp') {
+            padding-top: 2em;
+        }
+
     }
 
     &__card {

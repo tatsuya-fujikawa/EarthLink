@@ -3,5 +3,10 @@
     &__inner {
         width: 1100px;
         margin: 0 auto;
+
+        @include mq('sp') {
+            width: 95%;
+            margin: 0 auto;
+        }
     }
 }

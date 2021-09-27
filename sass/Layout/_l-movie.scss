@@ -12,6 +12,11 @@
     border-radius: 0 12px 0 0;
     top: 0;
     left: 0;
+
+    @include mq('sp') {
+      width: 95%;
+    }
+
   }
 
 

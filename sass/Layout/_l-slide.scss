@@ -12,6 +12,11 @@
       border-radius: 0 0 12px 0;
       top: 0;
       left: 0;
+
+      @include mq('sp') {
+        width: 95%;
+      }
+
     }
 
     &__inner {
@@ -19,6 +24,14 @@
         margin: 0 auto 0 7em;
         position: relative;
         top: -40px;
+
+        @include mq('sp') {
+          padding-top: 2em;
+          top: 0px;
+          margin: 0 auto;
+          width: 90vw;
+      }
+
     }
   
 }

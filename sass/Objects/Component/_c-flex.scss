@@ -6,8 +6,16 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include mq('sp') {
+      display: block;
+    }
+
     &-item {
       width: 50%;
+
+      @include mq('sp') {
+        width: 100%;
+      }
     }
   }
 

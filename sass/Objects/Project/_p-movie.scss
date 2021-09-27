@@ -1,0 +1,10 @@
+.p-movie {
+  &__movie {
+
+    @include mq('sp') {
+      width: 85%;
+      margin: 0 auto;
+  }
+
+  }
+}
