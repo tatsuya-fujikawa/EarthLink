@@ -15,6 +15,11 @@
   
     &__nav {
       width: 33%;
+
+      @include mq('sp') {
+        width: 100%;
+        margin-bottom: 2em;
+      }
   
       &-title {
         position: relative;

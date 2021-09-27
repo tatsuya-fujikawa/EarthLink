@@ -51,6 +51,11 @@ a {
   }
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   --en-font: 'roboto', sans-serif;
 }

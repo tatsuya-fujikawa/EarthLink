@@ -17,6 +17,10 @@
         height: 100%;
         top: 0;
         left: 0;
+
+        @include mq('sp') {
+            max-height: 0;
+        }
     }
 
     &:after {
@@ -30,5 +34,11 @@
         border-radius: 12px;
         background: linear-gradient(
 0deg, #004eb4 0%, #074db7 0%, #0069cb 100%);
+
+        @include mq('sp') {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+        }
     }
 }

@@ -12,6 +12,10 @@
     overflow: hidden;
     visibility: hidden;
 
+    @include mq('sp') {
+        height: 100%;
+    }
+
     &__container {
         width: 80%;
         position: absolute;
@@ -21,6 +25,19 @@
         right: 0;
         bottom: 0;
         margin: auto;
+        overflow-y: scroll;
+
+        -ms-overflow-style: none;    /* IE, Edge 対応 */
+        scrollbar-width: none;       /* Firefox 対応 */
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @include mq('sp') {
+            padding-top: 7em;
+            width: 90%;
+        }
     }
 
     &__inner {
@@ -28,6 +45,10 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+
+        @include mq('sp') {
+            display: block;
+        }
     }
 
 

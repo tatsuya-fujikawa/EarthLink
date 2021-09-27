@@ -1,6 +1,10 @@
 .l-benefits {
     overflow: hidden;
 
+    @include mq('sp') {
+        overflow: visible;
+    }
+
     &__wrap {
         padding-top: 5em;
     }
