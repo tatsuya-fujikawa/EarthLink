@@ -9,13 +9,27 @@
     content: '';
     right: 8%;
     top: 50px;
+
+    @include mq('sp') {
+      right: 0;
+      padding-top: 25px;
+    }
+
     
     img {
       border-radius: 12px 0 0 12px;
+
+      @include mq('sp') {
+        border-radius: 0;
+      }
     }
   }
 
   &__title {
     padding-top: 10em;
+
+    @include mq('sp') {
+      padding-top: 14em;
+    }
   }
 }

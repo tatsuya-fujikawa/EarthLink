@@ -1,7 +1,10 @@
 .l-submv {
   min-height: 540px;
   position: relative;
-  // background: linear-gradient(0deg, rgba(0,78,180,1) 0%, rgba(7,77,183,1) 0%, rgba(0,105,203,1) 100%);
+
+  @include mq('sp') {
+    min-height: 360px;
+  }
 
   &:after {
     position: absolute;
@@ -13,6 +16,10 @@
     width: 55%;
     height: 95%;
     // z-index: 20;
+
+    @include mq('sp') {
+      width: 0;
+    }
   }
 
   &.-occupation {
@@ -33,12 +40,20 @@
     height: 100%;
     // background: linear-gradient(0deg, rgba(0,78,180,1) 0%, rgba(7,77,183,1) 0%, rgba(0,105,203,1) 100%);
     background-color: var(--color-main);
+
+    @include mq('sp') {
+      width: 90%;
+    }
   }
 
   &__mask {
     width: 100%;
     background-color: var(--color-main);
     position: relative;
+
+    @include mq('sp') {
+      background-color: transparent;
+    }
   }
 
   &.-interview {
