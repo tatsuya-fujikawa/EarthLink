@@ -3,6 +3,11 @@
     display: flex;
     width: 90%;
 
+    @include mq('sp') {
+      display: block;
+      width: 100%;
+    }
+
     &.-wide {
       width: 100%;
     }
@@ -11,6 +16,10 @@
 
       &.-title {
         min-width: 30%;
+
+        @include mq('sp') {
+          padding-bottom: 2em;
+        }
 
         &.-history {
           min-width: 27%;
@@ -24,6 +33,11 @@
       }
       &.-list {
         width: 44%;
+
+        @include mq('sp') {
+          width: 100%;
+          padding-top: 2em;
+        }
       }
 
 

@@ -3,6 +3,10 @@
     font-size: rem(48);
     font-weight: bold;
     letter-spacing: 0.125em;
+
+    @include mq('sp') {
+      font-size: rem(24);
+    }
   }
 
   &__box {
@@ -10,10 +14,26 @@
     margin: 0 auto;
     padding-top: 8.25em;
 
+    @include mq('sp') {
+      padding-top: 4rem;
+    }
+
     p {
-      font-size: rem(20);
+      font-size: rem(24);
       font-weight: bold;
       padding-bottom: 1em;
+
+      @include mq('sp') {
+        font-size: rem(18);
+      }
+
+      &.-small {
+        font-size: rem(18);
+
+        @include mq('sp') {
+          font-size: rem(16);
+        }
+      }
     }
   }
 }

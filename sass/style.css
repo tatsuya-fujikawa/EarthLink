@@ -495,6 +495,11 @@ img {
   position: relative;
   z-index: -2;
 }
+@media screen and (max-width: 767px) {
+  .l-backgroundgray {
+    width: 100%;
+  }
+}
 .l-backgroundgray.-wide {
   width: 100%;
 }
@@ -671,6 +676,11 @@ img {
 .l-corevalue {
   margin-bottom: 10em;
 }
+@media screen and (max-width: 767px) {
+  .l-corevalue {
+    margin-bottom: 5em;
+  }
+}
 
 .l-leadsection {
   overflow: hidden;
@@ -800,11 +810,22 @@ img {
   display: flex;
   width: 90%;
 }
+@media screen and (max-width: 767px) {
+  .l-company__flex {
+    display: block;
+    width: 100%;
+  }
+}
 .l-company__flex.-wide {
   width: 100%;
 }
 .l-company__flex-item.-title {
   min-width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .l-company__flex-item.-title {
+    padding-bottom: 2em;
+  }
 }
 .l-company__flex-item.-title.-history {
   min-width: 27%;
@@ -817,6 +838,12 @@ img {
 }
 .l-company__flex-item.-list {
   width: 44%;
+}
+@media screen and (max-width: 767px) {
+  .l-company__flex-item.-list {
+    width: 100%;
+    padding-top: 2em;
+  }
 }
 
 .l-culture {
@@ -970,7 +997,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .c-headingSub__en {
-    font-size: 4.5rem;
+    font-size: 3.75rem;
   }
 }
 .c-headingSub__title {
@@ -1030,11 +1057,22 @@ img {
   display: inline-block;
   padding-right: 3em;
 }
+@media screen and (max-width: 767px) {
+  .c-headingLv3__jp {
+    font-size: 1.5rem;
+    padding-right: 2em;
+  }
+}
 .c-headingLv3__en {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.25rem;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .c-headingLv3__en {
+    font-size: 1rem;
+  }
 }
 .c-headingLv3__en:before {
   content: "";
@@ -1045,6 +1083,12 @@ img {
   height: 1px;
   bottom: 0;
   left: -65px;
+}
+@media screen and (max-width: 767px) {
+  .c-headingLv3__en:before {
+    left: -40px;
+    width: 15px;
+  }
 }
 
 .c-headingLv3.-occupation {
@@ -1136,13 +1180,23 @@ img {
 .c-flex__oneThird {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .c-flex__oneThird {
+    display: block;
+  }
+}
 .c-flex__oneThird-item {
   width: calc(100% / 3);
+}
+@media screen and (max-width: 767px) {
+  .c-flex__oneThird-item {
+    width: 100%;
+  }
 }
 
 .c-btn {
   position: relative;
-  font-size: 0.875rem;
+  font-size: 1rem;
   display: inline-block;
   cursor: pointer;
   background-color: var(--color-btn-white);
@@ -1205,9 +1259,14 @@ img {
   font-size: 12.5rem;
   font-weight: bold;
 }
+@media screen and (max-width: 767px) {
+  .c-companyname {
+    font-size: 4.5rem;
+  }
+}
 
 .c-text {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 2.25em;
   color: var(--color-text);
 }
@@ -1231,7 +1290,7 @@ img {
   padding: 0.5em 0 1em 1em;
 }
 .c-card__text {
-  font-size: 0.6875rem;
+  font-size: 0.875rem;
   padding-top: 0.25em;
   text-align: left;
 }
@@ -1369,7 +1428,7 @@ img {
 
 .p-navigation__circle {
   background-color: var(--color-btn-white);
-  width: 250px;
+  width: 220px;
   height: 250px;
   border-radius: 50%;
   top: -13%;
@@ -1477,15 +1536,38 @@ img {
   font-weight: bold;
   letter-spacing: 0.125em;
 }
+@media screen and (max-width: 767px) {
+  .p-philosophy__title {
+    font-size: 1.5rem;
+  }
+}
 .p-philosophy__box {
   width: 100%;
   margin: 0 auto;
   padding-top: 8.25em;
 }
+@media screen and (max-width: 767px) {
+  .p-philosophy__box {
+    padding-top: 4rem;
+  }
+}
 .p-philosophy__box p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 1em;
+}
+@media screen and (max-width: 767px) {
+  .p-philosophy__box p {
+    font-size: 1.125rem;
+  }
+}
+.p-philosophy__box p.-small {
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 767px) {
+  .p-philosophy__box p.-small {
+    font-size: 1rem;
+  }
 }
 
 .p-corevalue {
@@ -1496,16 +1578,33 @@ img {
   margin: 0 auto;
   width: 80%;
 }
+@media screen and (max-width: 767px) {
+  .p-corevalue__lead {
+    width: 95%;
+    padding-top: 2em;
+  }
+}
 .p-corevalue__list {
   padding-top: 5em;
   margin: 0 auto;
   width: 80%;
+}
+@media screen and (max-width: 767px) {
+  .p-corevalue__list {
+    width: 95%;
+    padding-top: 2em;
+  }
 }
 .p-corevalue__list-item {
   font-size: 1.5rem;
   font-weight: bold;
   padding-top: 1.25rem;
   color: var(--color-text);
+}
+@media screen and (max-width: 767px) {
+  .p-corevalue__list-item {
+    font-size: 1.25rem;
+  }
 }
 .p-corevalue__list:after {
   position: absolute;
@@ -1517,6 +1616,11 @@ img {
   right: 0;
   font-size: 12.5rem;
   font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .p-corevalue__list:after {
+    font-size: 3.5rem;
+  }
 }
 
 .p-data__circle {
@@ -1719,8 +1823,8 @@ img {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   padding-right: 1em;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 @media screen and (max-width: 767px) {
   .p-mv__catch-lead {
@@ -1743,7 +1847,7 @@ img {
   min-width: 180px;
 }
 .p-company__name {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: bold;
   position: relative;
   padding-bottom: 0.5em;
@@ -1758,8 +1862,16 @@ img {
   bottom: 0;
   left: 0;
 }
+.p-company__address:nth-of-type(2) {
+  padding-top: 2em;
+}
 .p-company__address-address {
-  font-size: 0.875rem;
+  font-size: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .p-company__address-address {
+    padding-bottom: 1em;
+  }
 }
 .p-company__list li {
   font-size: 0.875rem;
@@ -1770,6 +1882,17 @@ img {
 }
 .p-company__history-row dt {
   min-width: 155px;
+}
+@media screen and (max-width: 767px) {
+  .p-company__history-row dt {
+    min-width: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .p-company iframe {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .p-submv {
@@ -2279,7 +2402,7 @@ img {
 }
 
 .p-business__box {
-  padding: 2em;
+  padding: 0.5em;
   border: 3px solid var(--color-main);
   border-radius: 12px;
   position: relative;
@@ -2297,21 +2420,46 @@ img {
   opacity: 0.43;
   z-index: -1;
 }
+@media screen and (max-width: 767px) {
+  .p-business__box:after {
+    width: 0;
+    height: 0;
+  }
+}
 .p-business__textWrap {
   padding-top: 4.5em;
   width: 70%;
 }
+@media screen and (max-width: 767px) {
+  .p-business__textWrap {
+    width: 100%;
+    padding-top: 2em;
+  }
+}
 .p-business__textWrap.-half {
   width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .p-business__textWrap.-half {
+    width: 100%;
+    padding-top: 2em;
+  }
 }
 .p-business__cardWrap {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 3em;
   padding-bottom: 3em;
 }
 .p-business__card {
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .p-business__card {
+    width: 50%;
+    padding-bottom: 1em;
+  }
 }
 .p-business__card-wrap {
   border: 2px solid var(--color-main);
@@ -2320,12 +2468,23 @@ img {
   max-width: 200px;
   margin: 1.5em auto 0;
 }
+@media screen and (max-width: 767px) {
+  .p-business__card-wrap {
+    max-width: 150px;
+  }
+}
 .p-business__card-title {
   text-align: center;
   color: var(--color-main);
 }
 .p-business__card.-wide {
   margin-top: -10em;
+}
+@media screen and (max-width: 767px) {
+  .p-business__card.-wide {
+    margin-top: 0;
+    width: 100%;
+  }
 }
 .p-business__container {
   position: relative;
@@ -2340,6 +2499,12 @@ img {
   font-family: "Roboto", sans-serif;
   color: var(--color-bgtext);
   opacity: 0.07;
+}
+@media screen and (max-width: 767px) {
+  .p-business__container:after {
+    font-size: 5rem;
+    top: -30px;
+  }
 }
 .p-business__container.-no2:after {
   content: "2";
@@ -2539,7 +2704,7 @@ img {
   }
 }
 .p-benefits__card {
-  width: 80%;
+  width: 90%;
   margin: 0 auto 5em;
 }
 .p-benefits__card-title {
@@ -2593,7 +2758,7 @@ img {
 }
 .p-footer__nav-title {
   position: relative;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: bold;
   padding-bottom: 1.25em;
 }
@@ -2618,7 +2783,7 @@ img {
   }
 }
 .p-footer__nav-list {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   padding-top: 0.25em;
 }
 .p-footer__nav-list li {
@@ -2644,12 +2809,12 @@ img {
   }
 }
 .p-footer__text {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: bold;
   padding-bottom: 1.75em;
 }
 .p-footer__text-en {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .u-gothic {
