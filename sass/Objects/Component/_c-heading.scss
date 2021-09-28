@@ -88,7 +88,7 @@
         letter-spacing: 0.01em;
 
         @include mq('sp') {
-            font-size: rem(72);
+            font-size: rem(60);
         }
     }
 
@@ -150,12 +150,21 @@
         font-size: rem(32);
         display: inline-block;
         padding-right: 3em;
+
+        @include mq('sp') {
+            font-size: rem(24);
+            padding-right: 2em;
+          }
     }
     &__en {
         font-family: "Roboto", sans-serif;
         font-weight: bold;
         font-size: rem(20);
         position: relative;
+
+        @include mq('sp') {
+            font-size: rem(16);
+        }
 
         &:before {
             content: '';
@@ -166,6 +175,10 @@
             height: 1px;
             bottom: 0;
             left: -65px;
+            @include mq('sp') {
+                left: -40px;
+                width: 15px;
+              }
         }
 
     }

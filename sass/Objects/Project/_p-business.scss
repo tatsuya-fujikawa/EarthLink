@@ -1,6 +1,6 @@
 .p-business {
     &__box {
-        padding: 2em;
+        padding: 0.5em;
         border: 3px solid var(--color-main);
         border-radius: 12px;
         position: relative;
@@ -17,6 +17,11 @@
             border-radius: 12px;
             opacity: 0.43;
             z-index: -1;
+
+            @include mq('sp') {
+                width: 0;
+                height: 0;
+            }
         }
     }
 
@@ -24,26 +29,45 @@
         padding-top: 4.5em;
         width: 70%;
 
+        @include mq('sp') {
+            width: 100%;
+            padding-top: 2em;
+        }
+
         &.-half {
             width: 50%;
+
+            @include mq('sp') {
+                width: 100%;
+                padding-top: 2em;
+            }
         }
     }
 
     &__cardWrap {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding-top: 3em;
         padding-bottom: 3em;
 
     }
     &__card {
         position: relative;
+        @include mq('sp') {
+            width: 50%;
+            padding-bottom: 1em;
+        }
         &-wrap {
             border: 2px solid var(--color-main);
             border-radius: 12px;
             padding: 1em;
             max-width: 200px;
             margin: 1.5em auto 0;
+
+            @include mq('sp') {
+                max-width: 150px;
+            }
         }
 
         &-title {
@@ -53,6 +77,10 @@
         
         &.-wide {
             margin-top: -10em;
+            @include mq('sp') {
+                margin-top: 0;
+                width: 100%;
+            }
         }
     }
 
@@ -69,6 +97,12 @@
             font-family: "Roboto", sans-serif;
             color: var(--color-bgtext);
             opacity: 0.07;
+
+
+            @include mq('sp') {
+                font-size: rem(80);
+                top: -30px;
+            }
         }
 
         &.-no2 {

@@ -1,3 +1,7 @@
 .l-corevalue {
     margin-bottom: 10em;
+
+    @include mq('sp') {
+        margin-bottom: 5em;
+    }
 }
