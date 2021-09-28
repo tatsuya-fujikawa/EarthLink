@@ -5,6 +5,10 @@
   position: relative;
   z-index: -2;
 
+  @include mq('sp') {
+    width: 100%;
+  }
+
   &.-wide {
     width: 100%;
   }
